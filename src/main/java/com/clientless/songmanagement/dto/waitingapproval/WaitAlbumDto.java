@@ -1,0 +1,22 @@
+package com.clientless.songmanagement.dto.waitingapproval;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.springframework.web.multipart.MultipartFile;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+public class WaitAlbumDto {
+    private String idAlbum;
+    private String titleAlbum;
+    /*@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")*/
+    private String releasedYear;
+    private String genreType;/*
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "hh:mm:ss")*/
+    private String idArtist;
+    private MultipartFile file;
+}
